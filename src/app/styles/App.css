@@ -1,0 +1,64 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.fsd-demo h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.layer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.layer-name {
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.layer-desc {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.layer.app { border-left: 4px solid #e74c3c; }
+.layer.pages { border-left: 4px solid #e67e22; }
+.layer.widgets { border-left: 4px solid #f1c40f; }
+.layer.features { border-left: 4px solid #2ecc71; }
+.layer.entities { border-left: 4px solid #3498db; }
+.layer.shared { border-left: 4px solid #9b59b6; }
+
+.info {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.info pre {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
