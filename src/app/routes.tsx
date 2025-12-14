@@ -1,10 +1,9 @@
 import { Outlet, type RouteObject } from "react-router-dom";
 
 import { HomePage } from "@/pages/home";
-import { LoginPage } from "@/pages/login";
+import { LoginPage } from "@/pages/auth/login/index.ts";
 import { paths } from "@/shared/config";
 
-import { AppHeader } from "./ui/app-header.tsx";
 import { ErrorBoundary } from "./ui/error-boundary.tsx";
 import { AuthorizedGuard, NotAuthorizedGuard, NotFoundGuard } from "./guards";
 
@@ -13,7 +12,6 @@ export const routes: RouteObject[] = [
     ErrorBoundary,
     element: (
       <>
-        <AppHeader />
         <Outlet />
       </>
     ),
